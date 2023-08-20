@@ -36,7 +36,6 @@ Bootstrap5(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI")
 db = SQLAlchemy()
 db.init_app(app)
-db.create_all()
 
 # For adding profile images to the comment section
 gravatar = Gravatar(app,
